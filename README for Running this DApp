@@ -1,0 +1,25 @@
+README for running a voting dApp
+
+Inspired by https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2
+
+Ensure that you have your smart contract, web HTML and corresponding js in a worspace folder, ready before we begin.
+
+Setup the dev environment, as shown , by npm installing ganache-cli and web3 into a local node_modules.
+Run the ganache-cli in the first terminal
+
+Open a secondary terminal , and trigger the node console by running the node command.
+Initialize the required dependencies as in the guide with web3 and solc
+Use solc to compile the smart contract code
+Read about how the bytecode and interface from the compiled code are used further
+Proceed to deploy the contract using syntax available in the guide
+
+*****------ IMPORTANT: MUST-DO : NOTE DOWN THE deployedContract.address ; it will be required to access SC functions in our web application -----*****
+
+Interact with the contract using the aforementioned node console. Refer to the guide to create a few votes
+
+Open a third terminal session where we run the following commands: 
+sudo npm install -g http-server
+go to same directory of our dapp and run http-server
+go to one of the addresses provided in the console output
+
+Voila! You have your first DApp!
